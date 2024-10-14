@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white_ff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="扫码测试"
+        android:textColor="@color/app_black_000000"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_gray_f4f4f4" />
+
+    <Button
+        android:id="@+id/main_scan_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/app_blue_27a5f9"
+        android:text="扫一扫"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="扫码结果:"
+        android:textColor="@color/app_black_000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/main_result_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/app_black_000000"
+        android:textSize="16sp"
+        tools:text="8888888999999999999" />
+
+</LinearLayout>

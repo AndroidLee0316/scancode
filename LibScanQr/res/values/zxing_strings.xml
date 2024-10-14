@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="weather_network_unavailable">当前网络不佳，请稍后重试</string>
+  <string name="scancode_scan_hint">将二维码/条码放入框内，即可自动扫描</string>
+  <string name="scancode_album">相册</string>
+  <string name="scancode_touch_hint">轻触点亮</string>
+</resources>

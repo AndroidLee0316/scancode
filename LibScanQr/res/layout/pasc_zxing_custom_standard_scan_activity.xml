@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pasc.lib.barcodescanner.DecoratedBarcodeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zxing_detector_barcode_view"
+        app:zxing_preview_scaling_strategy="fitXY"
+        app:zxing_use_texture_view="true"
+        app:zxing_framing_margin_top="210dp"
+        app:zxing_scanner_layout="@layout/pasc_zxing_standard_barcode_scaner">
+    </com.pasc.lib.barcodescanner.DecoratedBarcodeView>
+
+
+</LinearLayout>

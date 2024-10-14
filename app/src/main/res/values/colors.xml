@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_white_ff">#ffffff</color>
+
+    <color name="app_black_000000">#000000</color>
+    <color name="app_black_333333">#333333</color>
+
+    <color name="app_blue_27a5f9">#27a5f9</color>
+    
+    <color name="app_gray_f4f4f4">#f4f4f4</color>
+    <color name="app_gray_666666">#666666</color>
+    <color name="app_gray_999999">#999999</color>
+
+    <color name="app_green_77d342" >#ff77d342</color>
+    <color name="app_red_e03a1f">#FFE03A1F</color >
+    <color name="app_red_d43921">#FFD43921</color >
+    
+</resources>

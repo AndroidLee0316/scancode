@@ -1,0 +1,31 @@
+
+ext {
+
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 30
+    compileSdkVersion = 30
+    buildToolsVersion = '30.0.3'
+
+    // App dependencies
+    supportLibraryVersion = '27.1.1'
+    support_lib_version = '27.1.1'
+
+    libPhotoVersion = "1.1.9"
+    arouterCompiler = '1.2.0'
+    aarRouterVersion = '1.2.1'
+    LIB_WIDGET= "com.zxs.lib:widget:1.0.0"
+    LIB_NET= 'com.github.AndroidLee0316:zxs_net:support_2.0.0'
+    LIB_BASE=  'com.github.AndroidLee0316:base:support_1.0.0'
+    LIB_HYBRID =  "com.zxs.lib:hybrid:1.0.0"
+
+    if (isRelease == 'false') {
+        aarScanCodeVersion = '1.0.11-SNAPSHOT'
+        MAVEN_URL = 'http://maven.paic.com.cn/repository/maven-public/'
+    } else {
+        aarScanCodeVersion = '1.0.15'
+        MAVEN_URL = 'http://maven.paic.com.cn/repository/maven-public/'
+    }
+
+
+}

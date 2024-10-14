@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.pasc.lib.barcodescanner.BarcodeView
+      android:id="@+id/zxing_barcode_surface"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:zxing_framing_margin_top="191dp"
+      app:zxing_framing_rect_height="250dp"
+      app:zxing_framing_rect_width="250dp"
+      />
+
+  <com.pasc.lib.scanqr.CustomViewfinderView
+      android:id="@+id/zxing_viewfinder_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:zxing_top="171dp"
+      app:zxing_possible_result_points="@color/zxing_color_custom_possible_result_points"
+      app:zxing_result_view="@color/zxing_color_custom_result_view"
+      app:zxing_viewfinder_laser="#FFFFFF"
+      app:zxing_viewfinder_mask="@color/zxing_color_custom_viewfinder_mask"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="140dp"
+      android:text="放入框内，自动扫描"
+      android:textColor="#dddddd"
+      android:textSize="16sp"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+
+        >
+
+      <!--<ImageView-->
+      <!--android:id="@+id/iv_back"-->
+      <!--android:layout_centerVertical="true"-->
+      <!--android:src="@mipmap/ic_back"-->
+      <!--android:layout_marginLeft="5dp"-->
+      <!--android:padding="5dp"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content" />-->
+      <TextView
+          android:id="@+id/iv_capture_back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10dp"
+          android:drawableLeft="@mipmap/zxing_ic_back_white"
+          android:drawablePadding="5dp"
+          android:text="关闭"
+          android:textColor="#dddddd"
+          android:textSize="16sp"
+          />
+
+      <TextView
+          android:id="@+id/tv_gallery"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dp"
+          android:text="相册"
+          android:textColor="#dddddd"
+          android:textSize="16sp"
+          />
+    </RelativeLayout>
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_bottom"
+      android:layout_width="match_parent"
+      android:layout_height="80dp"
+      android:layout_alignParentBottom="true"
+      android:background="#000000"
+      >
+
+    <LinearLayout
+        android:id="@+id/ll_pay_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="74dp"
+        android:orientation="vertical"
+        >
+
+      <ImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_gravity="center_horizontal"
+          android:alpha="0.3"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="4dp"
+          android:text="支付码"
+          android:textColor="#4dffffff"
+          android:textSize="10sp"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_traffic_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="74dp"
+        android:orientation="vertical"
+        >
+
+      <ImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_gravity="center_horizontal"
+          android:alpha="0.3"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="4dp"
+          android:text="乘车码"
+          android:textColor="#4dffffff"
+          android:textSize="10sp"
+          />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+</RelativeLayout>
